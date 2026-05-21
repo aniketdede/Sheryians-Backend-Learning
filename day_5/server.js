@@ -1,5 +1,6 @@
 const express = require("express")
 const ConnectToDB = require('./src/db/db')
+require("dotenv").config();
 
 
 const app = express();   //created server
