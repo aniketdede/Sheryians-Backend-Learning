@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 
 function ConnectToDB() {
 
-    mongoose.connect("mongodb+srv://aniketdede12_db_user:FfEtnTbxlchykMuK@cluster0.ky0smsg.mongodb.net/Cohort")
+   mongoose.connect(process.env.MONGODB_URI)
         .then(
             () => {
                       console.log("Connected to DB");
